@@ -114,13 +114,14 @@ a.db{
 }
 /************index over**********/
 .header{
-    position:absolute;
+    position: fixed;
     top:0;
     left:0;
     width:92%;
     padding:10px 4%;
     height:2em;
     background:rgba(0,0,0,.8);
+	z-index:9;
 }
 .header h2{
     float:left;
@@ -244,25 +245,22 @@ h2.rew-table{
     color:rgba(255,180,0,1);
     font-size:1.2em;
 }
-
 .b-list li p a{
     position:absolute;
     right:10px;
     bottom:10px;
-    width:24px;
+    width: 66px;
     height:24px;
-    background:url(../images/icons.png) no-repeat -103px 0;
-    background-size:auto 24px;
+	padding:2px;
+    
 }
-.b-list li p a.recmo{
-    position:relative;
-    display:inline-block;
-    width:48px;
-    height:24px;
-    background:url(../images/up.png) no-repeat right;
-    left:10px;
-    top:0;
-    padding-right:15px;
+.b-list li p a span{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	position:relative;
+	top:5px;
+	background:#c00 url(../images/up.png) no-repeat right;
     background-size:auto 24px;
 }
 h3{
@@ -281,9 +279,10 @@ h3{
     line-height:1.7em;
 }
 .actions{
-	position:absolute;
-	bottom:10px;
-	right:20px;
+	position: fixed;
+	top: 5px;
+	left: 8em;
+	z-index:10;
 }
 .actions a{
 	display:inline-block;
@@ -293,15 +292,15 @@ h3{
 	margin:0 3px;
 }
 .actions .map{
-	background:rgba(0,0,0,.7) url(../images/map.png) no-repeat center;
+	background:rgba(255,255,255,.7) url(../images/map.png) no-repeat center;
 	background-size:26px 26px;
 }
 .actions .phone{
-	background:rgba(0,0,0,.7) url(../images/phone.png) no-repeat center;
+	background:rgba(255,255,255,.7) url(../images/phone.png) no-repeat center;
 	background-size:26px 26px;
 }
 .actions .recmo{
-	background:rgba(0,0,0,.7) url(../images/up.png) no-repeat center;
+	background:rgba(255,0,0,.7) url(../images/up.png) no-repeat center;
 	background-size:26px 26px;
 }
 /**keys**/
@@ -356,5 +355,9 @@ p.keys{
 	background:rgba(255,100,0,.7);
 	text-align:center;
 }
+
+
+
+
 
 
