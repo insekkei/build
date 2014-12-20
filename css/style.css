@@ -60,16 +60,16 @@ a.db{
     border-radius:50%;
     float:left;
 }
-.user>div{
+.user>a>div{
     float:left;
     padding:10px;
 }
-.user>div>div p{
+.user .info p{
     float:left;
     text-align:center;
     margin:10px 10px 0 0;
 }
-.user>div>div p span{
+.user .info p span{
     display:block;
     color:#eee;
 }
@@ -248,9 +248,21 @@ h2.rew-table{
 .b-list li p a{
     position:absolute;
     right:10px;
+    bottom:10px;
     width:24px;
     height:24px;
     background:url(../images/icons.png) no-repeat -103px 0;
+    background-size:auto 24px;
+}
+.b-list li p a.recmo{
+    position:relative;
+    display:inline-block;
+    width:48px;
+    height:24px;
+    background:url(../images/up.png) no-repeat right;
+    left:10px;
+    top:0;
+    padding-right:15px;
     background-size:auto 24px;
 }
 h3{
@@ -258,12 +270,91 @@ h3{
     font-weight:bold;
     text-align:center;
 }
+.details{
+	position:relative;
+}
 .details img{
     width:100%;
 }
 .details p{
     margin:1em 0;
     line-height:1.7em;
+}
+.actions{
+	position:absolute;
+	bottom:10px;
+	right:20px;
+}
+.actions a{
+	display:inline-block;
+	width:26px;
+	height:26px;
+	padding:5px;
+	margin:0 3px;
+}
+.actions .map{
+	background:rgba(0,0,0,.7) url(../images/map.png) no-repeat center;
+	background-size:26px 26px;
+}
+.actions .phone{
+	background:rgba(0,0,0,.7) url(../images/phone.png) no-repeat center;
+	background-size:26px 26px;
+}
+.actions .recmo{
+	background:rgba(0,0,0,.7) url(../images/up.png) no-repeat center;
+	background-size:26px 26px;
+}
+/**keys**/
+.ser{
+	position:relative;
+}
+.ser p{
+	margin:.5em 0;
+}
+.ser input,.ser select{
+	width:100%;
+	padding-left:10px;
+}
+.ser input{text-align:left;}
+#submit{
+	background:url(../images/search.png) no-repeat;
+	position:absolute;
+	left:90%;
+	z-index:99;
+	cursor:pointer;
+}
+p.keys{
+	margin-bottom:1em;
+}
+.keys a{
+	color:#fff;
+	background:rgba(0,0,0,.7);
+	border-radius:5px;
+	padding:3px 8px;
+}
+.pagination{text-align:center}
+.pagination select{width:3em;}
+
+.cus-de{
+	font-size:16px;
+	text-align:center;
+	line-height:2em;
+}
+.cus-de h3{
+	font-size:20px;
+	margin-bottom:2em;
+}
+.call{
+	text-align:center;
+}
+.call a{
+	display:inline-block;
+	width:200px;
+	height:3em;
+	line-height:3em;
+	margin:5em auto;
+	background:rgba(255,100,0,.7);
+	text-align:center;
 }
 
 
