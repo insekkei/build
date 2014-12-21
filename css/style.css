@@ -268,6 +268,9 @@ h3{
     font-weight:bold;
     text-align:center;
 }
+.main.de{
+	margin-bottom:60px;
+}
 .details{
 	position:relative;
 }
@@ -280,27 +283,45 @@ h3{
 }
 .actions{
 	position: fixed;
-	top: 5px;
-	left: 8em;
+	bottom: 0;
+	left:0;
+	width:100%;
+	background:rgba(0,0,0,.9);
 	z-index:10;
 }
 .actions a{
 	display:inline-block;
-	width:26px;
-	height:26px;
-	padding:5px;
-	margin:0 3px;
+	float:left;
+	width:20%;
+	height:56px;
+	text-align:center;
+	padding:3px 0;
+	margin:0;
+	box-shadow:0 1px 1px #aaa;
+}
+.actions a span{
+	display:block;
+	margin-top:30px;
+	color:#bbb;
 }
 .actions .map{
-	background:rgba(255,255,255,.7) url(../images/map.png) no-repeat center;
+	background:url(../images/map.png) no-repeat center 10px;
 	background-size:26px 26px;
 }
 .actions .phone{
-	background:rgba(255,255,255,.7) url(../images/phone.png) no-repeat center;
+	background:url(../images/phone.png) no-repeat center 10px;
+	background-size:26px 26px;
+}
+.actions .style{
+	background:url(../images/style.png) no-repeat center 10px;
+	background-size:26px 26px;
+}
+.actions .album{
+	background:url(../images/album.png) no-repeat center 10px;
 	background-size:26px 26px;
 }
 .actions .recmo{
-	background:rgba(255,0,0,.7) url(../images/up.png) no-repeat center;
+	background:rgba(255,0,0,.7) url(../images/up.png) no-repeat center 10px;
 	background-size:26px 26px;
 }
 /**keys**/
@@ -376,6 +397,20 @@ p.keys{
 	padding:10px 100px;
 	line-height:2em;
 }
+
+/***幻灯**/
+.ad{position:fixed;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.9);z-index:11;display:none;}
+.ad-slide{width:100%;height:100%;}
+.ad-slide-link{position:absolute;display:none;width:100%;height:100%;outline:0;}
+.ad-slide-link img{width:100%;height:100%;}
+#ad1,#ad11{display:block;}
+.ad-slide-link:target{display:block;}
+.ad-slide-nav{ position:absolute;right:10px ;bottom:10px;z-index:1000;}
+.ad-slide-nav li{float:left;width:30px;height:30px;background:#fff;margin-left:10px;}
+.ad-slide-nav li a{display:block;width:30px;height:30px;color:#000;
+text-align:center;font-size:10px;line-height: 30px;}
+.ad-slide-nav li a.hover{background:#000;color:#fff;}
+
 
 
 
